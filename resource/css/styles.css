@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: #6499E9;
+    
+}
+
+h3 {
+    width: 25%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #80B3FF;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.image-box {
+    width: 20%;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid #80B3FF;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#qrCode {
+    margin-bottom: 20px;
+}
+
+#qrCode img {
+    max-width: 30%;
+    height: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#mobileButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #4285f4; /* Color de fondo de Google */
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#mobileButton:hover {
+    background-color: #3367d6; /* Color de fondo de Google al pasar el mouse */
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    #qrCode {
+        display: none; /* Se oculta en dispositivos móviles */
+    }
+
+    #mobileButton {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #qrCode {
+        display: block; /* Se muestra en dispositivos de escritorio */
+    }
+
+    #mobileButton {
+        display: none; /* Se oculta en dispositivos de escritorio */
+    }
+}
