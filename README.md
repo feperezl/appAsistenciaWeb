@@ -1,0 +1,2 @@
+# appAsistenciaWeb
+appAsistencia webQR
